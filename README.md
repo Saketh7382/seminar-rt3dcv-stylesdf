@@ -193,6 +193,13 @@ This Component is responsible to generate low resolution view-dependent 64x64 RG
 <p align="center" class="figure">Fig.14 Volume aggreagation formulas</p>
 <br/>
 
-<p>dfa</p>
+<p>
+Formulas Description:
+</p>
+<p>
+r(t) = Camera direction
+C(r), F(r) = Expected color/feature of camera ray r(t)
+T(t) = the probability that the ray travels from tn to t without hitting any other particle.
+</p>
 
 </html>
