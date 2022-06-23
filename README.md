@@ -7,7 +7,7 @@ This Blog article is the review of paper <a href="https://arxiv.org/pdf/2112.114
 
 <br/>
 <br/>
-<h2 class="title" align="center">Introduction</h2>
+<h1 class="title" align="center">Introduction</h1>
 
 <p>
 2D Image Generation, the task of generating new images, is becoming increasingly popular now a days. Extending this generation task to another dimension brings us to the concept of 3D image generation. Techniques such as GRAF <a href="#2">[2]</a>, HoloGAN <a href="#3">[3]</a>, PiGAN <a href="#4">[4]</a> have made a great amount of contribution in this area. Although these techniques have their pros and cons, overall 3D-image generation poses two main challenges, high resolution view-consistent generation of RGB images and detailed 3D shape generation. <b>StyleSDF</b> <a href="#1">[1]</a> attempts to achieve these challenges. StyleSDF is a technique that generates high resolution 3D-consistent RGB images and detailed 3D shapes, with nover views that are globally aligned, while having stylistic awareness that enables image editing. StyleSDF is trained on single-view RGB data only and Fig.01 summarises the goal of StyleSDF in a concise manner.
@@ -35,7 +35,7 @@ Fig.02 summarizes how StyleSDF is implemented to achieve it's goals. As we can s
 
 <br/>
 <br/>
-<h2 class="title" align="center">Relevant Topics</h2>
+<h1 class="title" align="center">Relevant Topics</h1>
 
 <h2>Signed Distance Field</h2>
 <p>
@@ -111,7 +111,7 @@ Generative Adversarial Networks, or GANs for short, are an approach to generativ
 
 <br/>
 <br/>
-<h2 class="title" align="center">Related Works</h2>
+<h1 class="title" align="center">Related Works</h1>
 <h2>Single-View Supervised 3D-Aware GANs</h2>
 
 <p>
@@ -138,7 +138,7 @@ Pi-GAN is one of the most advanced Single-View Supervised 3D-Aware GAN that achi
 
 <br/>
 <br/>
-<h2 class="title" align="center">How StyleSDF works?</h2>
+<h1 class="title" align="center">How StyleSDF works?</h1>
 
 <p>
 Back to the original topic, now let us discuss the algorithm of StyleSDF detailly in this section. Fig.10 shows the overall architecture of StyleSDF. The entire architecture can be mainly divided into 2 components: Mapping Networks, Volume renderer, and 2D Generator.
@@ -225,7 +225,7 @@ This component Aim is to generate High resolution Image at viewpoint v, given fe
 
 <br/>
 <br/>
-<h2 class="title" align="center">StyleSDF Training</h2>
+<h1 class="title" align="center">StyleSDF Training</h1>
 
 <p>
 In this section, let us briefly discuss about various loss functions implemented to train both volume rendered and 2D generator.
@@ -266,7 +266,7 @@ As we discussed, the 2D generator is implemented using StyleGAN2 so the loss fun
 
 <br/>
 <br/>
-<h2 class="title" align="center">Evaluation & Results</h2>
+<h1 class="title" align="center">Evaluation & Results</h1>
 
 <p>
 So far we have discussed, how StyleSDF works and 
