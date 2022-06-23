@@ -13,7 +13,7 @@ This Blog article is the review of paper <a href="https://arxiv.org/pdf/2112.114
 
 <br/>
 <div align="center">
-<img width="400px" class="image" src="./images/fig_01.png"/>
+<img width=500px" class="image" src="./images/fig_01.png"/>
 </div>
 <p align="center" class="figure">Fig.01 The goal of StyleSDF</p>
 <br/>
@@ -24,7 +24,7 @@ Fig.02 summarizes how StyleSDF is implemented to achieve it's goals. As we can s
 
 <br/>
 <div align="center">
-<img width="400px" class="image" src="./images/fig_02.png"/>
+<img width=500px" class="image" src="./images/fig_02.png"/>
 </div>
 <p align="center" class="figure">Fig.02 High level view of StyleSDF algorithm</p>
 <br/>
@@ -40,7 +40,7 @@ Signed Distance Field (SDF) is a 3D Volumetric representation in which each 3D s
 
 <br/>
 <div align="center">
-<img width="400px" class="image" src="./images/fig_03.png"/>
+<img width=500px" class="image" src="./images/fig_03.png"/>
 </div>
 <p align="center" class="figure">Fig.03 Signed Distance Field</p>
 <br/>
@@ -52,7 +52,7 @@ The concept of neural rendering combines ideas from classical computer graphics 
 
 <br/>
 <div align="center">
-<img width="400px" class="image" src="./images/fig_04.png"/>
+<img width=500px" class="image" src="./images/fig_04.png"/>
 </div>
 <p align="center" class="figure">Fig.04 Neural Rendering</p>
 <br/>
@@ -64,7 +64,7 @@ Neural Radiance Field is a functional representation that jointly models geometr
 
 <br/>
 <div align="center">
-<img width="400px" class="image" src="./images/fig_05.png"/>
+<img width=500px" class="image" src="./images/fig_05.png"/>
 </div>
 <p align="center" class="figure">Fig.05 Radiance Field Function</p>
 <br/>
@@ -75,7 +75,7 @@ NeRF is a technique that introduced the use of volume rendering for reconstructi
 
 <br/>
 <div align="center">
-<img width="400px" class="image" src="./images/fig_06.png"/>
+<img width=500px" class="image" src="./images/fig_06.png"/>
 </div>
 <p align="center" class="figure">Fig.06 NeRF</p>
 <br/>
@@ -87,7 +87,7 @@ Generative Adversarial Networks, or GANs for short, are an approach to generativ
 
 <br/>
 <div align="center">
-<img width="400px" class="image" src="./images/fig_07.png"/>
+<img width=500px" class="image" src="./images/fig_07.png"/>
 </div>
 <p align="center" class="figure">Fig.07 GAN Architecture</p>
 <br/>
@@ -100,7 +100,7 @@ Generative Adversarial Networks, or GANs for short, are an approach to generativ
 
 <br/>
 <div align="center">
-<img width="400px" class="image" src="./images/fig_08.png"/>
+<img width=500px" class="image" src="./images/fig_08.png"/>
 </div>
 <p align="center" class="figure">Fig.08 a) StyleGAN b) StyleGAN2</p>
 <br/>
@@ -125,7 +125,7 @@ Pi-GAN is one of the most advanced Single-View Supervised 3D-Aware GAN that achi
 
 <br/>
 <div align="center">
-<img width="400px" class="image" src="./images/fig_09.png"/>
+<img width=500px" class="image" src="./images/fig_09.png"/>
 </div>
 <p align="center" class="figure">Fig.09 Pi-GAN</p>
 <br/>
@@ -138,7 +138,7 @@ Back to the original topic, now let us discuss the algorithm of StyleSDF detaill
 
 <br/>
 <div align="center">
-<img width="400px" class="image" src="./images/fig_10.png"/>
+<img width=500px" class="image" src="./images/fig_10.png"/>
 </div>
 <p align="center" class="figure">Fig.10 StyleSDF architecture</p>
 <br/>
@@ -155,7 +155,7 @@ This component takes 5D cordinates (3 spacial coordinates: x + 2 viewing directi
 
 <br/>
 <div align="center">
-<img width="400px" class="image" src="./images/fig_11.png"/>
+<img width=500px" class="image" src="./images/fig_11.png"/>
 </div>
 <p align="center" class="figure">Fig.11 Volume Renderer</p>
 <br/>
@@ -166,7 +166,7 @@ Now let us take a step further deep and look at the architecture of the volume r
 
 <br/>
 <div align="center">
-<img width="400px" class="image" src="./images/fig_12.png"/>
+<img width=500px" class="image" src="./images/fig_12.png"/>
 </div>
 <p align="center" class="figure">Fig.12 Volume Renderer Architecture</p>
 <br/>
@@ -177,7 +177,7 @@ This function controls the tightness of the density around the surface boundary.
 
 <br/>
 <div align="center">
-<img width="400px" class="image" src="./images/fig_13.png"/>
+<img width=500px" class="image" src="./images/fig_13.png"/>
 </div>
 <p align="center" class="figure">Fig.13 Density function</p>
 <br/>
@@ -188,7 +188,7 @@ This Component is responsible to generate low resolution view-dependent 64x64 RG
 
 <br/>
 <div align="center">
-<img width="400px" class="image" src="./images/fig_14.png"/>
+<img width=500px" class="image" src="./images/fig_14.png"/>
 </div>
 <p align="center" class="figure">Fig.14 Volume aggreagation formulas</p>
 <br/>
@@ -210,7 +210,7 @@ This component Aim is to generate High resolution Image at viewpoint v, given fe
 
 <br/>
 <div align="center">
-<img width="400px" class="image" src="./images/fig_15.png"/>
+<img width=500px" class="image" src="./images/fig_15.png"/>
 </div>
 <p align="center" class="figure">Fig.15 2D Generator</p>
 <br/>
