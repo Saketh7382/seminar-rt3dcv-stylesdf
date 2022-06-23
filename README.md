@@ -269,7 +269,7 @@ As we discussed, the 2D generator is implemented using StyleGAN2 so the loss fun
 <h1 class="title" align="center">Evaluation & Results</h1>
 
 <p>
-So far we have discussed, how StyleSDF works and 
+So far we have discussed, how StyleSDF works and various loss functions implemented. Now let us take a look at the results produced by StyleSDF and evaluate the results with out baseline model Pi-GAN. First, let us briefly take a look at the datasets used to train StyleSDF, then we will discuss the qualitative evaluation of the results and then finally discuss quantitaive evaluation of the results.
 </p>
 
 </html>
