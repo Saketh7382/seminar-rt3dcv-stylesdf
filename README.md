@@ -202,4 +202,17 @@ Formulas Description:
 <li>T(t) = the probability that the ray travels from tn to t without hitting any other particle.</li>
 </p>
 
+<h2>2D Generator</h2>
+<p>
+This component Aim is to generate High resolution Image at viewpoint v, given feature vector (Fig.15). We have already learned that state-of-the-art techniue to generate High resolution images is StyleGAN2, so StyleSDF uses StyleGAN2 as 2D generator, which takes the 64x64 RGB image and its corresponding feature vector as inputs and produces a High-resolution 1024x1024 RGB image as output.
+</p>
+
+
+<br/>
+<div align="center">
+<img width="400px" class="image" src="./images/fig_15.png"/>
+</div>
+<p align="center" class="figure">Fig.15 2D Generator</p>
+<br/>
+
 </html>
