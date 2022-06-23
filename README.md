@@ -197,9 +197,9 @@ This Component is responsible to generate low resolution view-dependent 64x64 RG
 Formulas Description:
 </p>
 <p>
-r(t) = Camera direction
-C(r), F(r) = Expected color/feature of camera ray r(t)
-T(t) = the probability that the ray travels from tn to t without hitting any other particle.
+<li>r(t) = Camera direction</li>
+<li>C(r), F(r) = Expected color/feature of camera ray r(t)</li>
+<li>T(t) = the probability that the ray travels from tn to t without hitting any other particle.</li>
 </p>
 
 </html>
