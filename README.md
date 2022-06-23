@@ -281,6 +281,12 @@ StyleSDF is trained on two different datasets, namely FFHQ and AFHQ datasets.
 <p>
 This dataset contains 70,000 images of diverse human faces of resolution 1024x1024. All the images in this dataset are centered and aligned
 </p>
+<br/>
+<div align="center">
+<img width=500px" class="image" src="./images/fig_17.png"/>
+</div>
+<p align="center" class="figure">Fig.16 FFHQ dataset</p>
+<br/>
 <li><b>AFHQ</b></li>
 <p>
 This dataset contains 15,630 images of wild animals of resolution 512x512. Images in this dataset are not aligned and contains images of diverse species.
