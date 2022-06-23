@@ -215,4 +215,10 @@ This component Aim is to generate High resolution Image at viewpoint v, given fe
 <p align="center" class="figure">Fig.15 2D Generator</p>
 <br/>
 
+<h2 class="title" align="center">StyleSDF Training</h2>
+
+<p>
+In this section, let us briefly discuss about various loss functions implemented to train both volume rendered and 2D generator.
+</p>
+
 </html>
