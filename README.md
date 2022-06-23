@@ -30,7 +30,7 @@ This Blog article is the review of paper <a href="https://arxiv.org/pdf/2112.114
 2D Image Generation, the task of generating new images, is becoming increasingly popular now a days. Extending this generation task to another dimension brings us to the concept of 3D image generation. Techniques such as GRAF <a href="#2">[2]</a>, HoloGAN <a href="#3">[3]</a>, PiGAN <a href="#4">[4]</a> have made a great amount of contribution in this area. Although these techniques have their pros and cons, overall 3D-image generation poses two main challenges, high resolution view-consistent generation of RGB images and detailed 3D shape generation. <b>StyleSDF</b> <a href="#1">[1]</a> attempts to achieve these challenges. StyleSDF is a technique that generates high resolution 3D-consistent RGB images and detailed 3D shapes, with nover views that are globally aligned, while having stylistic awareness that enables image editing. StyleSDF is trained on single-view RGB data only and Fig.01 summarises the goal of StyleSDF in a concise manner.
 </p>
 
-<div align="center">
+<div align="center" style="padding-top:20px">
 <img width="400px" class="image" src="./images/fig_01.png"/>
 </div>
 <p align="center" class="figure">Fig.01 The goal of StyleSDF</p>
