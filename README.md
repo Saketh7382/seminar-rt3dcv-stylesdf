@@ -1,4 +1,5 @@
 <html>
+<head>
 <style>
     .title{
         font-size: 28px;
@@ -16,6 +17,7 @@
         padding: 20px 0;
     }
 </style>
+</head>
 <h1 align="center">Paper Review on <b>StyleSDF</b></h1>
 <div style="display: flex; flex-direction: column;">
 <p>
