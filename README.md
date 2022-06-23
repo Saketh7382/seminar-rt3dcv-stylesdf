@@ -221,4 +221,10 @@ This component Aim is to generate High resolution Image at viewpoint v, given fe
 In this section, let us briefly discuss about various loss functions implemented to train both volume rendered and 2D generator.
 </p>
 
+<h2>Volume renderer loss functions</h2>
+<h3><li>Adversarial Loss</li></h3>
+<p>
+This loss differentiates between ground truth data and generated data by the GANs. (<a href="https://machinelearningmastery.com/generative-adversarial-network-loss-functions/">learn more</a>).
+</p>
+
 </html>
