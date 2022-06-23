@@ -229,8 +229,25 @@ This loss differentiates between ground truth data and generated data by the GAN
 
 <h3><li>Pose alignment Loss</li></h3>
 <p>
-This loss Makes sure that all the generated objects are globally aligned or not, i.e., it trains the network in such a way that it generates images with poses that are globally valid.
+This loss Makes sure that all the generated objects are globally aligned or not, i.e., it trains the network in such a way that it generates images with poses that are globally valid. (Fig.16 a)
 </p>
+
+<h3><li>Eikonal Loss</li></h3>
+<p>
+This loss ensures that the learned SDF is physically valid, i.e., a valid SDF has unit 2 norm gradients and Eikonal loss makes sure that generated SDF follows this rule. (Fig.16 b)
+</p>
+
+<h3><li>Minimal Surface Loss</li></h3>
+<p>
+This loss minimizes the number of zero-crossings to prevent formation of spurious and non-visible surfaces. (Fig.16 c)
+</p>
+
+<br/>
+<div align="center">
+<img width=500px" class="image" src="./images/fig_16.png"/>
+</div>
+<p align="center" class="figure">Fig.16 Volume Generator loss functions; a) Pose alignment loss b) Eikonal loss c) Minimal surface loss</p>
+<br/>
 
 
 </html>
