@@ -33,7 +33,7 @@ This Blog article is the review of paper <a href="https://arxiv.org/pdf/2112.114
 <div align="center">
 <img width="400px" class="image" src="./images/fig_01.png"/>
 </div>
-<span align="center" class="figure">Fig.01 The goal of StyleSDF</span>
+<p align="center" class="figure">Fig.01 The goal of StyleSDF</p>
 <p>
 Fig.02 summarizes how StyleSDF is implemented to achieve it's goals. As we can see that StyleSDF first generates a view-consistent 3D shape, from which it then extracts a 64x64 RGB image and its corresponding feature vector. Later, it combines both the low resolution RGB-image and feature vector to generate a high resolution 1024x1024 RGB-image that is 3D-consistent.
 </p>
