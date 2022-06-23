@@ -148,11 +148,40 @@ Back to the original topic, now let us discuss the algorithm of StyleSDF detaill
 The components Volume Renderer and 2D generator has their own corresponding mapping networks which map the input latent vector into modulation signals for each layer. For simplicity, we ignore the mapping networks and concentrate on the other components in this discussion.
 </p>
 
-<h2>Mapping Networks</h2>
+<h2>Volume Renderer</h2>
 <p>
-The components Volume Renderer and 2D generator has their own corresponding mapping networks which map the input latent vector into modulation signals for each layer. For simplicity, we ignore the mapping networks and concentrate on the other components in this discussion.
+This component takes 5D cordinates (3 spacial coordinates: x + 2 viewing directions: v) as input and outputs SDF value at spatial location x, view-dependent color value at x with view v, and feature vector, represented by d(x), c(x,v) and f(x,v) respectively (Fig.11).
 </p>
 
+<br/>
+<div align="center">
+<img width="400px" class="image" src="./images/fig_11.png"/>
 </div>
+<p align="center" class="figure">Fig.11 Volume Renderer</p>
+<br/>
+
+<p>
+Now let us take a step further deep and look at the architecture of the volume renderer (Fig.12). With notations mentioned above, we can see from the figure that volume renderer has 3 FC layers. The first FC layer outputs d(x), SDF value at poisition x. We can use an algorithhm called marching cubes (<a href="https://en.wikipedia.org/wiki/Marching_cubes">learn more</a>) to visualize the 3D shape represented by d(x). Further, the second layer outputs c(x,v) and third FC layer outputs f(x,v), which are view-dependent color value at x with view v, and its corresponding feature vector respectively. If we observe there are two more components in the architecure that require additional description. They are Density function (K-alpha) and Volume aggregation. 
+</p>
+
+<br/>
+<div align="center">
+<img width="400px" class="image" src="./images/fig_12.png"/>
+</div>
+<p align="center" class="figure">Fig.12 Volume Renderer Architecture</p>
+<br/>
+
+<h3><li>Density function</li></h3>
+This function controls the tightness of the density around the surface boundary. It takes d(x) as input an produces the density at spacial location x. As we can see from the formula for density function (Fig.13) the output depends on two terms, one being the input d(x) and the other is alpha, which is learned by the network during training. So volume renderer learns the value of alpha in such a way that it controls the tightness of the density around the surface boundary based on the SDF value at that location.
+</div>
+
+<br/>
+<div align="center">
+<img width="400px" class="image" src="./images/fig_13.png"/>
+</div>
+<p align="center" class="figure">Fig.13 Density function</p>
+<br/>
+
+
 
 </html>
