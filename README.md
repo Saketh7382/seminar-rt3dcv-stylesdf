@@ -5,6 +5,8 @@
 This Blog article is the review of paper <a href="https://arxiv.org/pdf/2112.11427.pdf" targer="_blank">StyleSDF: High-Resolution 3D-Consistent Image and Geometry Generation</a> published in CVPR 2022 <a href="#1">[1]</a>. First we will look at a brief introduction to the topic, followed by relevant concepts and some related works. Then we will discuss the implementation details in depth, followed by evaluations and results. Finally, we conclude this review by looking at the limitations & future work.
 </p>
 
+<br/>
+<br/>
 <h2 class="title" align="center">Introduction</h2>
 
 <p>
@@ -31,6 +33,8 @@ Fig.02 summarizes how StyleSDF is implemented to achieve it's goals. As we can s
 
 <p>Before discussing about StyleSDF more detailly, Let us look at some relavant topics and related works that better equip us to understand the technique in a much efficient manner.</p>
 
+<br/>
+<br/>
 <h2 class="title" align="center">Relevant Topics</h2>
 
 <h2>Signed Distance Field</h2>
@@ -105,6 +109,8 @@ Generative Adversarial Networks, or GANs for short, are an approach to generativ
 <p align="center" class="figure">Fig.08 a) StyleGAN b) StyleGAN2</p>
 <br/>
 
+<br/>
+<br/>
 <h2 class="title" align="center">Related Works</h2>
 <h2>Single-View Supervised 3D-Aware GANs</h2>
 
@@ -130,6 +136,8 @@ Pi-GAN is one of the most advanced Single-View Supervised 3D-Aware GAN that achi
 <p align="center" class="figure">Fig.09 Pi-GAN</p>
 <br/>
 
+<br/>
+<br/>
 <h2 class="title" align="center">How StyleSDF works?</h2>
 
 <p>
@@ -215,6 +223,8 @@ This component Aim is to generate High resolution Image at viewpoint v, given fe
 <p align="center" class="figure">Fig.15 2D Generator</p>
 <br/>
 
+<br/>
+<br/>
 <h2 class="title" align="center">StyleSDF Training</h2>
 
 <p>
@@ -251,9 +261,11 @@ This loss minimizes the number of zero-crossings to prevent formation of spuriou
 
 <h2>2D generator loss functions</h2>
 <p>
-As we discussed, the 2D generator is implemented using StyleGAN2 so the loss functions used to train this component are the same loss functions that are used to train StyleGAN2. They are: Non saturating adversarial loss + R1 regularization + path regularization.
+As we discussed, the 2D generator is implemented using StyleGAN2 so the loss functions used to train this component are the same loss functions that are used to train StyleGAN2. They are: Non saturating adversarial loss + R1 regularization + path regulariza
 </p>
 
+<br/>
+<br/>
 <h2 class="title" align="center">Evaluation & Results</h2>
 
 <p>
