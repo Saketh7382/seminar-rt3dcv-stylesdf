@@ -227,4 +227,10 @@ In this section, let us briefly discuss about various loss functions implemented
 This loss differentiates between ground truth data and generated data by the GANs. (<a href="https://machinelearningmastery.com/generative-adversarial-network-loss-functions/">learn more</a>).
 </p>
 
+<h3><li>Pose alignment Loss</li></h3>
+<p>
+This loss Makes sure that all the generated objects are globally aligned or not, i.e., it trains the network in such a way that it generates images with poses that are globally valid.
+</p>
+
+
 </html>
