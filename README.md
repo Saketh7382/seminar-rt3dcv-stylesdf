@@ -291,5 +291,11 @@ This dataset contains 70,000 images of diverse human faces of resolution 1024x10
 <p>
 This dataset contains 15,630 images of wild animals of resolution 512x512. Images in this dataset are not aligned and contains images of diverse species.
 </p>
+<br/>
+<div align="center">
+<img width=500px" class="image" src="./images/fig_18.png"/>
+</div>
+<p align="center" class="figure">Fig.16 AFHQ dataset</p>
+<br/>
 </ol>
 </html>
