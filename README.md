@@ -1,23 +1,4 @@
 <html>
-<head>
-<style>
-    .title{
-        font-size: 28px;
-    }
-    .figure{
-        font-size: 12px;
-        color: rgb(150,150,150);
-        padding-bottom: 20px;
-    }
-    .img-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 0;
-    }
-</style>
-</head>
 <h1 align="center">Paper Review on <b>StyleSDF</b></h1>
 <div style="display: flex; flex-direction: column;">
 <p>
@@ -30,18 +11,23 @@ This Blog article is the review of paper <a href="https://arxiv.org/pdf/2112.114
 2D Image Generation, the task of generating new images, is becoming increasingly popular now a days. Extending this generation task to another dimension brings us to the concept of 3D image generation. Techniques such as GRAF <a href="#2">[2]</a>, HoloGAN <a href="#3">[3]</a>, PiGAN <a href="#4">[4]</a> have made a great amount of contribution in this area. Although these techniques have their pros and cons, overall 3D-image generation poses two main challenges, high resolution view-consistent generation of RGB images and detailed 3D shape generation. <b>StyleSDF</b> <a href="#1">[1]</a> attempts to achieve these challenges. StyleSDF is a technique that generates high resolution 3D-consistent RGB images and detailed 3D shapes, with nover views that are globally aligned, while having stylistic awareness that enables image editing. StyleSDF is trained on single-view RGB data only and Fig.01 summarises the goal of StyleSDF in a concise manner.
 </p>
 
-<div align="center" style="padding-top:20px">
+<br/>
+<div align="center">
 <img width="400px" class="image" src="./images/fig_01.png"/>
 </div>
 <p align="center" class="figure">Fig.01 The goal of StyleSDF</p>
+<br/>
+
 <p>
 Fig.02 summarizes how StyleSDF is implemented to achieve it's goals. As we can see that StyleSDF first generates a view-consistent 3D shape, from which it then extracts a 64x64 RGB image and its corresponding feature vector. Later, it combines both the low resolution RGB-image and feature vector to generate a high resolution 1024x1024 RGB-image that is 3D-consistent.
 </p>
 
-<div class="img-container">
+<br/>
+<div align="center">
 <img width="400px" class="image" src="./images/fig_02.png"/>
-<span class="figure">Fig.02 High level view of StyleSDF algorithm</span>
 </div>
+<p align="center" class="figure">Fig.02 High level view of StyleSDF algorithm</p>
+<br/>
 
 <p>Before discussing about StyleSDF more detailly, Let us look at some relavant topics and related works that better equip us to understand the technique in a much efficient manner.</p>
 
