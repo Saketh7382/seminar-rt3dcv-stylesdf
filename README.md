@@ -249,5 +249,15 @@ This loss minimizes the number of zero-crossings to prevent formation of spuriou
 <p align="center" class="figure">Fig.16 Volume Generator loss functions; a) Pose alignment loss b) Eikonal loss c) Minimal surface loss</p>
 <br/>
 
+<h2>2D generator loss functions</h2>
+<p>
+As we discussed, the 2D generator is implemented using StyleGAN2 so the loss functions used to train this component are the same loss functions that are used to train StyleGAN2. They are: Non saturating adversarial loss + R1 regularization + path regularization.
+</p>
+
+<h2 class="title" align="center">Evaluation & Results</h2>
+
+<p>
+So far we have discussed, how StyleSDF works and 
+</p>
 
 </html>
