@@ -182,6 +182,17 @@ This function controls the tightness of the density around the surface boundary.
 <p align="center" class="figure">Fig.13 Density function</p>
 <br/>
 
+<h3><li>Volume Aggregation</li></h3>
+This Component is responsible to generate low resolution view-dependent 64x64 RGB image and its corresponding feature vector by taking the output of density function, c(x,v) and f(x,v) as inputs.
+</div>
 
+<br/>
+<div align="center">
+<img width="400px" class="image" src="./images/fig_14.png"/>
+</div>
+<p align="center" class="figure">Fig.14 Volume aggreagation formulas</p>
+<br/>
+
+<p>dfa</p>
 
 </html>
