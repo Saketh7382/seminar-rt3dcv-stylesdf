@@ -38,49 +38,59 @@ Fig.02 summarizes how StyleSDF is implemented to achieve it's goals. As we can s
 Signed Distance Field (SDF) is a 3D Volumetric representation in which each 3D spatial coordinate will have a value, called Distance value (Fig.03). This distance value can be either positive, 0 or negative and the value tells us how farther away spatially are we from the nearest point on the surface. A zero distance value at a particular location indicates that there exists a surface at that spatial point. A positive values indicates the distance away from surface in the direction of surface normal and a negative value indicates the distance away from the surface in the opposite direction of surface normal.
 </p>
 
-<div class="img-container">
+<br/>
+<div align="center">
 <img width="400px" class="image" src="./images/fig_03.png"/>
-<span class="figure">Fig.03 Signed Distance Field</span>
 </div>
+<p align="center" class="figure">Fig.03 Signed Distance Field</p>
+<br/>
 
 <h2>Neural Rendering</h2>
 <p>
 The concept of neural rendering combines ideas from classical computer graphics and machine learning to create algorithms for synthesizing images from real-world observations <a href="#5">[5]</a>. Neural rendering is 3D consistent by design and it enables applications such as novel viewpoint synthesis of a captured scene.
 </p>
 
-<div class="img-container">
+<br/>
+<div align="center">
 <img width="400px" class="image" src="./images/fig_04.png"/>
-<span class="figure">Fig.04 Neural Rendering</span>
 </div>
+<p align="center" class="figure">Fig.04 Neural Rendering</p>
+<br/>
 
 <h2>Neural Radiance Field - NeRF</h2>
 <p>
 Neural Radiance Field is a functional representation that jointly models geometry and appearance, and is able to model view-dependent effects <a href="#6">[6]</a>. Fig.05 shows the Radiance field function. The function takes 5D cordinates (3 spacial coordinates + 2 viewing directions) as input and produces Radiance field (view-dependent emmitted radiance + Volume density) as output.
 </p>
 
-<div class="img-container">
+<br/>
+<div align="center">
 <img width="400px" class="image" src="./images/fig_05.png"/>
-<span class="figure">Fig.05 Radiance Field Function</span>
 </div>
+<p align="center" class="figure">Fig.05 Radiance Field Function</p>
+<br/>
 
 <p>
 NeRF is a technique that introduced the use of volume rendering for reconstructing a 3D scene using Radiance Field to synthesize novel views (Fig.06). 
 </p>
 
-<div class="img-container">
+<br/>
+<div align="center">
 <img width="400px" class="image" src="./images/fig_06.png"/>
-<span class="figure">Fig.06 NeRF</span>
 </div>
+<p align="center" class="figure">Fig.06 NeRF</p>
+<br/>
 
 <h2>Generative Adversarial Networks - GANs</h2>
 <p>
 Generative Adversarial Networks, or GANs for short, are an approach to generative modeling using deep learning methods, such as convolutional neural networks (Fig.07). GANs can synthesize high-resolution RGB images that are practically indistinguishable from real images. You can learn more about GANs <a href="https://machinelearningmastery.com/what-are-generative-adversarial-networks-gans/" target="_blank">here</a>.
 </p>
 
-<div class="img-container">
+<br/>
+<div align="center">
 <img width="400px" class="image" src="./images/fig_07.png"/>
-<span class="figure">Fig.07 GAN Architecture</span>
 </div>
+<p align="center" class="figure">Fig.07 GAN Architecture</p>
+<br/>
 
 <h2>StyleGAN & StyleGAN2</h2>
 <p>
@@ -88,10 +98,12 @@ Generative Adversarial Networks, or GANs for short, are an approach to generativ
 
 </p>
 
-<div class="img-container">
+<br/>
+<div align="center">
 <img width="400px" class="image" src="./images/fig_08.png"/>
-<span class="figure">Fig.08 a) StyleGAN b) StyleGAN2</span>
 </div>
+<p align="center" class="figure">Fig.08 a) StyleGAN b) StyleGAN2</p>
+<br/>
 
 <h2 class="title" align="center">Related Works</h2>
 <h2>Single-View Supervised 3D-Aware GANs</h2>
@@ -111,10 +123,12 @@ In the previous section, we had a brief introduction to what GANs are. Now let u
 Pi-GAN is one of the most advanced Single-View Supervised 3D-Aware GAN that achieves the same goal as StyleSDF. That is why Pi-GAN is a strong baseline for evaluating the results of StyleSDF. Pi-GAN, as NeRF, generates 3D shapes using radiance fields. Fig.09 describes Pi-GAN in a concise manner. 
 </p>
 
-<div class="img-container">
+<br/>
+<div align="center">
 <img width="400px" class="image" src="./images/fig_09.png"/>
-<span class="figure">Fig.09 Pi-GAN</span>
 </div>
+<p align="center" class="figure">Fig.09 Pi-GAN</p>
+<br/>
 
 <h2 class="title" align="center">How StyleSDF works?</h2>
 
@@ -122,10 +136,12 @@ Pi-GAN is one of the most advanced Single-View Supervised 3D-Aware GAN that achi
 Back to the original topic, now let us discuss the algorithm of StyleSDF detailly in this section. Fig.10 shows the overall architecture of StyleSDF. The entire architecture can be mainly divided into 2 components: Mapping Networks, Volume renderer, and 2D Generator.
 </p>
 
-<div class="img-container">
+<br/>
+<div align="center">
 <img width="400px" class="image" src="./images/fig_10.png"/>
-<span class="figure">Fig.10 StyleSDF architecture</span>
 </div>
+<p align="center" class="figure">Fig.10 StyleSDF architecture</p>
+<br/>
 
 <h2>Mapping Networks</h2>
 <p>
