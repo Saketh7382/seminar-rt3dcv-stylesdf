@@ -430,9 +430,9 @@ Another potential task that can be implemented is to eliminate 2D generator alto
 
 <br/>
 <div align="center">
-<img width=500px" class="image" src="./images/fig_27.png"/>
+<img width=500px" class="image" src="./images/fig_28.png"/>
 </div>
-<p align="center" class="figure">Fig.27 Trade off between training time and performance</p>
+<p align="center" class="figure">Fig.28 Elimination of 2D generator</p>
 <br/>
 
 <br/>
