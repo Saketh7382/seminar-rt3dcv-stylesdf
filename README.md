@@ -400,4 +400,43 @@ StyleSDF does not distinguish between foreground and background of an image, hen
 <p align="center" class="figure">Fig.26 Inconsistent Foreground & Background</p>
 <br/>
 
+<br/>
+<br/>
+<h1 class="title" align="center">Future Works</h2>
+<p>
+Before concluding this article, It's time for us to discuss one more small topic regarding StyleSDF. That is the future work in this area. Since StyleSDF is very new and novel technique, there is a lot of room for improvement and we would discuss two of the future works that can be implemented in StyleSDF in this section.
+</p>
+
+<h2><li>End-to-End training</li></h2>
+<p>
+Currently, to train StyleSDF, one needs to train volume renderer and 2D Generator seperately. We can try to figure out a way to train both the models in an end-to-end fashion as a single network instead of two seperate networks. This leads to more refined geometry generation by StyleSDF. But sadly, this premise has a tradeoff between performance and training time.
+</p>
+
+<p>
+If we try to perform End-to-End training of StyleSDF, this leads to increased consumption of GPU resources which in turn increases training time. We can decrease the batch size to reduce the consumption of GPU, but this leads to poor performance of the model. Hence, one need to balance between training time and Performance of the model.
+</p>
+
+<br/>
+<div align="center">
+<img width=500px" class="image" src="./images/fig_27.png"/>
+</div>
+<p align="center" class="figure">Fig.27 Trade off between training time and performance</p>
+<br/>
+
+<h2><li>Elimination of 2D Generation</li></h2>
+<p>
+Another potential task that can be implemented is to eliminate 2D generator altogether from the architecture and figure out a way to generate high resolution image directly from generated SDF model, instead of using intermediate 64x64 low resolution images and its feature vector.
+</p>
+
+<br/>
+<div align="center">
+<img width=500px" class="image" src="./images/fig_27.png"/>
+</div>
+<p align="center" class="figure">Fig.27 Trade off between training time and performance</p>
+<br/>
+
+<br/>
+<br/>
+<h1 class="title" align="center">Conclusion</h2>
+
 </html>
