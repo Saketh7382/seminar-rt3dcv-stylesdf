@@ -2,7 +2,7 @@
 <h1 align="center">Paper Review on <b>StyleSDF</b></h1>
 <div style="display: flex; flex-direction: column;">
 <p>
-This Blog article is the review of paper <a href="https://arxiv.org/pdf/2112.11427.pdf" targer="_blank">StyleSDF: High-Resolution 3D-Consistent Image and Geometry Generation</a> published in CVPR 2022 <a href="#1">[1]</a>. First we will look at a brief introduction to the topic, followed by relevant concepts and some related works. Then we will discuss the implementation details in depth, followed by evaluations and results. Finally, we conclude this review by looking at the limitations & future work.
+This Blog article is the review of paper <a href="https://arxiv.org/pdf/2112.11427.pdf" targer="_blank">StyleSDF: High-Resolution 3D-Consistent Image and Geometry Generation</a> published in CVPR 2022 <a href="#1">[1]</a>. First we will look at a brief introduction to the topic, followed by relevant concepts and some related works. Then we will discuss the implementation details in depth, followed by evaluations and results. Finally, we conclude this review by looking at the limitations & future work. You can check my presentation slides for this paper review <a href="https://docs.google.com/presentation/d/1E34zi1VKszkNEcYt4riW4LUrqtkjG6Sj/edit?usp=sharing&ouid=100856124967717223803&rtpof=true&sd=true">here</a>.
 </p>
 
 <br/>
@@ -459,6 +459,29 @@ In this article we have discussed about StyleSDF. What is it? How does it works?
 </p>
 <p>
 <a name="5">[5]</a> Advances in Neural Rendering. Tewari, A. and Thies, J. and Mildenhall, B. and Srinivasan, P. and Tretschk, E. and Yifan, W. and Lassner, C. and Sitzmann, V. and Martin-Brualla, R. and Lombardi, S. and Simon, T. and Theobalt, C. and Niessner, M. and Barron, J. T. and Wetzstein, G. and Zollhofer, M. and Golyanik, V. Computer Graphics Forum (EG STAR 2022). 
+</p>
+<p>
+<a name="6">[6]</a> Ben Mildenhall, Pratul P Srinivasan, Matthew Tancik, Jonathan T Barron, Ravi Ramamoorthi, and Ren Ng. Nerf: Representing scenes as neural radiance fields for view synthesis. In ECCV, pages 405–421. Springer, 2020.
+</p>
+<p>
+<a name="7">[7]</a> Tero Karras, Samuli Laine, and Timo Aila. A style-based generator architecture for generative adversarial networks. In CVPR, pages 4401–4410, 2019.
+</p>
+
+<p>
+<a name="8">[8]</a> Tero Karras, Samuli Laine, Miika Aittala, Janne Hellsten, Jaakko Lehtinen, and Timo Aila. Analyzing and improving the image quality of stylegan. In CVPR, pages 8110–8119,v2020. 
+</p>
+
+<p>
+<a name="9">[9]</a> Jonathan T. Barron, Ben Mildenhall, Matthew Tancik, Peter Hedman, Ricardo Martin-Brualla, and Pratul P. Srinivasan. Mip-nerf: A multiscale representation for anti-aliasing neural radiance fields. In ICCV, pages 5855–5864, October 2021
+</p>
+
+<p>
+<a name="10">[10]</a> Tero Karras, Miika Aittala, Samuli Laine, Erik Hark ¨ onen, ¨ Janne Hellsten, Jaakko Lehtinen, and Timo Aila. Aliasfree generative adversarial networks. arXiv preprint arXiv:2106.12423, 2021.
+</p>
+
+
+<p>
+<a name="11">[11]</a> Kai Zhang, Gernot Riegler, Noah Snavely, and Vladlen Koltun. Nerf++: Analyzing and improving neural radiance fields. arXiv preprint arXiv:2010.07492, 2020. 
 </p>
 
 </html>
