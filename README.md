@@ -446,7 +446,19 @@ In this article we have discussed about StyleSDF. What is it? How does it works?
 <br/>
 <h1 class="title" align="center">References</h2>
 <p>
-<a name="1">[1]</a> Refer
+<a name="1">[1]</a> StyleSDF: High-Resolution 3D-Consistent Image and Geometry Generation. Roy Or-El, X.Luo, M.Shan, E.Shechtman, J.J.Park, I.K.Shlizerman. In CVPR, 2022.
+</p>
+<p>
+<a name="2">[2]</a> Katja Schwarz, Yiyi Liao, Michael Niemeyer, and Andreas Geiger. Graf: Generative radiance fields for 3d-aware image synthesis. In NeurIPS, 2020.
+</p>
+<p>
+<a name="3">[3]</a> Eric R. Chan, Marco Monteiro, Petr Kellnhofer, Jiajun Wu, and Gordon Wetzstein. pi-gan: Periodic implicit generative adversarial networks for 3d-aware image synthesis. In CVPR, pages 5799–5809, 2021.
+</p>
+<p>
+<a name="4">[4]</a> Thu Nguyen-Phuoc, Chuan Li, Lucas Theis, Christian Richardt, and Yong-Liang Yang. Hologan: Unsupervised learning of 3d representations from natural images. In ICCV, pages 7588–7597, 2019.
+</p>
+<p>
+<a name="5">[5]</a> Advances in Neural Rendering. Tewari, A. and Thies, J. and Mildenhall, B. and Srinivasan, P. and Tretschk, E. and Yifan, W. and Lassner, C. and Sitzmann, V. and Martin-Brualla, R. and Lombardi, S. and Simon, T. and Theobalt, C. and Niessner, M. and Barron, J. T. and Wetzstein, G. and Zollhofer, M. and Golyanik, V. Computer Graphics Forum (EG STAR 2022). 
 </p>
 
 </html>
