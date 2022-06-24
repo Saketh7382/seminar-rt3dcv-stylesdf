@@ -311,4 +311,93 @@ In this section, let us evaluate the quality of StyleSDF results with our main b
 <p align="center" class="figure">Fig.19 Qualitative analysis</p>
 <br/>
 
+<h2>Quantitaive Analysis</h2>
+<p>
+Now let us evaluate the results of StyleSDF quantitatively and for that the authors have used two metrics, Frechet Inception Distance (FID) and Kernel Inception Distance (KID). The lower the value of these metrics are, the better the quality of generated results. From Fig.20 and Fig.21 we can see that FID and KID values of StyleSDF results over datasets FFHQ and AFHQ respectively, surpasses all the other methods in comparision. 
+</p>
+
+<br/>
+<div align="center">
+<img width=500px" class="image" src="./images/fig_20.png"/>
+</div>
+<p align="center" class="figure">Fig.20 Quantitative comparision over FFHQ dataset</p>
+<br/>
+
+<br/>
+<div align="center">
+<img width=500px" class="image" src="./images/fig_21.png"/>
+</div>
+<p align="center" class="figure">Fig.21 Quantitative comparision over AFHQ dataset</p>
+<br/>
+
+<h2>Depth Consistency Results</h2>
+<p>
+In this section we discuss the comparision of depth consistency of the generated images by StyleSDF and its baseline model Pi-GAN. We analyse how well the generated images are consistent in 3D world, i.e, we see how well the novel views align with each other globally. Fig.22 shows us the qualitative comparision of the results and we can see from that the generated poses by StyleSDF are aligned perfectly with little no error, which is not the case with the results of Pi-GAN. And in Fig.23, we can see the quantitative comparision of the depth consistency of results using metric Modified Chamfer Distance.
+</p>
+
+<br/>
+<div align="center">
+<img width=500px" class="image" src="./images/fig_22.png"/>
+</div>
+<p align="center" class="figure">Fig.22 Quantitative comparision of depth consistency</p>
+<br/>
+
+<br/>
+<div align="center">
+<img width=500px" class="image" src="./images/fig_23.png"/>
+</div>
+<p align="center" class="figure">Fig.23 Quantitative comparision of depth consistency</p>
+<br/>
+
+<br/>
+<br/>
+<h1 class="title" align="center">Limitations and Potential Solutions</h1>
+
+<p>
+StyleSDF is very novel and new technique, and as with any new model it do pose some limitations. In this section, let us discuss 3 limitations StyleSDF poses and potential solutions to those limitations.
+</p>
+
+<h2><li>Potential Aliasing & Flickering Artifacts</li></h2>
+<p>
+Although StyleSDF poduces tremondously quality images with little to no artifacts, it do has some limitations in this area. For example; we can observe some artifacts in the area of teeth in Fig.24 
+</p>
+<span><b>Potential Solution: </b>Can be corrected similarly to Mip-GAN <a href="#9">[9]</a> and Alias-Free StyleGAN <a href="#10">[10]</a></span>
+<p></p>
+
+<br/>
+<div align="center">
+<img width=500px" class="image" src="./images/fig_24.png"/>
+</div>
+<p align="center" class="figure">Fig.24 Potential Aliasing & Flickering Artifacts</p>
+<br/>
+
+<h2><li>Inducing Artifacts</li></h2>
+<p>
+Since the technique is single-view supervised, it also poses some limitations while generating 3D shapes. It induces some artifacts such as dents, as we can see from Fig.25
+</p>
+<span><b>Potential Solution: </b>Adust the losses to eliminate the issue.</span>
+<p></p>
+
+<br/>
+<div align="center">
+<img width=500px" class="image" src="./images/fig_25.png"/>
+</div>
+<p align="center" class="figure">Fig.25 Inducing Artifacts</p>
+<br/>
+
+<h2><li>Inconsistent Foreground & Background</li></h2>
+<p>
+StyleSDF does not distinguish between foreground and background of an image, hence although it generates images with very high quality, the foreground might be blurry, as we can see from Fig.26
+</p>
+<span><b>Potential Solution: </b>Add additional volume renderer to render bacground as suggested in Nerf++ <a href="#11">[11]</a></span>
+<p></p>
+
+
+<br/>
+<div align="center">
+<img width=500px" class="image" src="./images/fig_26.png"/>
+</div>
+<p align="center" class="figure">Fig.26 Inconsistent Foreground & Background</p>
+<br/>
+
 </html>
