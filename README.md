@@ -438,5 +438,15 @@ Another potential task that can be implemented is to eliminate 2D generator alto
 <br/>
 <br/>
 <h1 class="title" align="center">Conclusion</h2>
+<p>
+In this article we have discussed about StyleSDF. What is it? How does it works? How well does it work? Its limitations and Future work. Also, we have discussed some important topics that are related to StyleSDF and also looked at few relevant works. With all the information that we have discussed and seen, we can conclued that StyleSDF outperforms Baseline Model Pi-GAN and other related architectures. Even though it has its own limitations, It is a promising active area in 3D Consistent Image generation and Novel View Synthesis and its main application areas lies in the field of Medical application, AR/VR, Robitic vision, etc...
+</p>
+
+<br/>
+<br/>
+<h1 class="title" align="center">References</h2>
+<p>
+<a name="1">[1]</a> Refer
+</p>
 
 </html>
